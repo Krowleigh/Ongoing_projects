@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoCkUp PoS</title>
+    <style>
+        .button {
+            width: 100px;
+            height: 100px;
+            visibility: show;
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #apple {
+            border-color: red;
+            color: red;
+            position: absolute;
+            right: 0px;
+            top: 1;
+        }
+
+        #apple:hover {
+            background: red;
+            color: white;
+        }
+
+        #banana {
+            border-color: yellow;
+            color: yellow;
+            position: absolute;
+            right: 120px;
+            top: 1;
+        }
+
+        #banana:hover {
+            background: yellow;
+            color: white;
+        }
+
+        #coconut {
+            border-color: grey;
+            color: grey;
+            position: absolute;
+            right: 240px;
+            top: 1;
+        }
+
+        #coconut:hover {
+            background: grey;
+            color: white;
+        }
+
+        #donut {
+            border-color: brown;
+            color: brown;
+            position: absolute;
+            right: 360px;
+            top: 1;
+        }
+
+        #donut:hover {
+            background: brown;
+            color: white;
+            position: absolute;
+        }
+
+        #eggplant {
+            border-color: purple;
+            color: purple;
+            position: absolute;
+            right: 120px;
+            top: 120px;
+        }
+
+        #eggplant:hover {
+            background: purple;
+            color: white;
+        }
+
+        #fig {
+            border-color: purple;
+            color: purple;
+            position: absolute;
+            right: 240px;
+            top: 120px;
+        }
+
+        #fig:hover {
+            background: purple;
+            color: white;
+        }
+
+        #green {
+            border-color: green;
+            color: green;
+            position: absolute;
+            right: 0;
+            top: 120px;
+        }
+
+        #green:hover {
+            background: green;
+            color: white;
+        }
+
+        #checkout {
+            border-color: #2196F3;
+            color: dodgerblue;
+            position: absolute;
+            bottom: 0;
+        }
+
+        #checkout:hover {
+            background: #2196F3;
+            color: white;
+        }
+        #text-box {
+            border-color: black;
+            border-width: 1px;
+            border-style: dashed;
+            width: 200px;
+            position: absolute;
+            left: 0;
+        }
+        .text {
+            text-align: left;
+            font-family: sans-serif;
+        }
+        .ticket {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="index1.js"></script>
+    <button id="apple" class="button">Apple</button>
+    <button id="banana" class="button">Banana</button>
+    <button id="coconut" class="button">Coconut</button>
+    <button id="donut" class="button">Donut</button>
+    <button id="eggplant" class="button">Eggplant</button>
+    <button id="fig" class="button">Fig</button>
+    <button id="green" class="button">Green Bean</button>
+    <button id="checkout" class="button">Checkout</button>
+    <div id="text-box">
+    <h1 id="ticket" class="text">Ticket</h1>
+    <ul id="cart"></ul>
+    <h1 id="sub" class="text">$</h1>
+    <h1 id="tax" class="text">$</h1>
+    <h1 id="total" class="text">$</h1>
+    </div>
+</body>
+
+</html>

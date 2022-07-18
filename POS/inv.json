@@ -1,0 +1,32 @@
+[
+    {
+        "apple": {
+            "price": 13,
+            "tag": 143
+        },
+        "banana": {
+            "price": 1.43,
+            "tag": 123
+        },
+        "Cucumber": {
+            "price": 1.12,
+            "tag": 154
+        },
+        "donut": {
+            "price": 2.72,
+            "tag": 621
+        },
+        "Eggplant": {
+            "price": 1.79,
+            "tag": 193
+        },
+        "fig": {
+            "price": 1.19,
+            "tag": 912
+        },
+        "Green Bean": {
+            "price": 0.43,
+            "tag": 291
+        }
+    }
+]
