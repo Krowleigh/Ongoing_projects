@@ -7,12 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: lightcoral;
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 
 <body>
 
     <h1>Please Enter Design Code</h1>
     <input type="text" id="code" autofocus>
+    <button id="submit">Submit</button>
     <h1>If no image is shown after entering code, please make sure your design code is entered correctly.</h1>
     <div id="image"></div>
     <script>
@@ -130,7 +137,56 @@
                 {
                     img: "https://www.greatamericancookies.com/wp-content/uploads/2021/08/GACC_Cake_Dude-1400x800-52d7dbc-1.jpg",
                     id: "B1041"
-                }
+                },
+                {
+                    img: "https://www.greatamericancookies.com/wp-content/uploads/2021/08/GAC_CC_HBD29Forever-B1038-800x800-e7bfd1b-1.jpg",
+                    id: "B1038"
+                },
+                {
+                    img: "https://www.greatamericancookies.com/wp-content/uploads/2021/08/HBD-Jenny.jpg",
+                    id: "B1037"
+                },
+                {
+                    img: "https://www.greatamericancookies.com/wp-content/uploads/2021/08/GAC_CC_HBDFirstBday-B1025-1400x800-86244f3.jpg",
+                    id: "B1025"
+                },
+                {
+                    img: "https://www.greatamericancookies.com/wp-content/uploads/2021/08/HBD-Dump-Truck.jpg",
+                    id: "B1036"
+                },
+                {
+                    img: "https://www.greatamericancookies.com/wp-content/uploads/2021/08/GAC_CC_HBDCrown-B1028-640x640-86244f3-1.jpg",
+                    id: "B1028"
+                },
+                {
+                    id: "B1035",
+                    img: "https://www.greatamericancookies.com/wp-content/uploads/2021/08/Popcorn-HBD.jpg"
+                },
+                {
+                    id: "B1039",
+                    img: 'https://www.greatamericancookies.com/wp-content/uploads/2021/08/BirthdayBBall_2016-1400x800-d117e07.jpg'
+                },
+                {
+                    id: "B1029",
+                    img: "https://www.greatamericancookies.com/wp-content/uploads/2021/08/Little-Monster.jpg"
+                },
+                {
+                    id: "B1034",
+                    img: "https://www.greatamericancookies.com/wp-content/uploads/2021/08/Fish.jpg"
+                },
+                {
+                    id: "B1027",
+                    img: "https://www.greatamericancookies.com/wp-content/uploads/2021/08/GAC_CC_HBDBoot-B1027-640x640-86244f3-1.jpg"
+                },
+                {
+                    id: "B1026",
+                    img: "https://www.greatamericancookies.com/wp-content/uploads/2021/08/GAC_CC_HBDGuitar-B1026-640x640-fac4a00-1.jpg"
+                },
+                {
+                    id: "B1023",
+                    img: "https://www.greatamericancookies.com/wp-content/uploads/2021/08/GAC_CC_HBDMotorcycle-B1023-500x500-55e3268.png"
+                },
+
             ]
 
             // one-time setup
@@ -152,18 +208,16 @@
             /* 
             Called in response to events.
             */
-            $(document).on("keydown", examineCode);
+            $("#submit").click(examineCode);
             function examineCode() {
-                if (event.which === 13) {
                     $("#img").remove();
                     for (i = 0; i < list.length; i++) {
                         if (list[i].id === $("#code").val()) {
-                            var img = $('<img id="img">'); //Equivalent: $(document.createElement('img'))
+                            var img = $('<img id="img">');
                             img.attr('src', list[i].img);
                             img.appendTo('#image');
                         }
                     }
-                }
             }
 
             ////////////////////////////////////////////////////////////////////////////////
